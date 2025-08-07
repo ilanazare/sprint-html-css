@@ -1,5 +1,7 @@
-/* Media Queries para Responsividade */
-@media (max-width: 768px) {
+/* Estilos Responsivos */
+
+/* Telas médias (tablets) */
+@media (max-width: 992px) {
     header {
         flex-direction: column;
         padding: 1rem;
@@ -10,21 +12,84 @@
     }
     
     nav ul {
-        flex-direction: column;
-        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
     }
     
     nav ul li {
-        margin: 0.5rem 0;
+        margin: 0.5rem;
     }
     
     .produto {
         flex-direction: column;
     }
     
+    .descricao {
+        text-align: center;
+    }
+    
+    .imagens-veiculo {
+        flex-direction: column;
+        align-items: center;
+    }
+    
     .imagens-veiculo img {
-        width: 100%;
-        min-width: auto;
+        max-width: 80%;
+    }
+    
+    table {
+        font-size: 0.9rem;
+    }
+    
+    th, td {
+        padding: 0.8rem;
+    }
+}
+
+/* Telas pequenas (celulares) */
+@media (max-width: 768px) {
+    body {
+        font-size: 0.95rem;
+    }
+    
+    header {
+        padding: 0.8rem;
+    }
+    
+    .logo img {
+        height: 40px;
+    }
+    
+    nav ul li {
+        margin: 0.3rem;
+    }
+    
+    nav ul li a {
+        padding: 0.3rem 0.6rem;
+    }
+    
+    main {
+        padding: 1rem;
+    }
+    
+    h1 {
+        font-size: 1.5rem;
+    }
+    
+    h2 {
+        font-size: 1.3rem;
+    }
+    
+    .produto img {
+        max-width: 100%;
+    }
+    
+    .video-container {
+        margin-bottom: 0.5rem;
+    }
+    
+    .imagens-veiculo img {
+        max-width: 100%;
     }
     
     table {
@@ -34,21 +99,58 @@
     th, td {
         padding: 0.5rem;
     }
-}
-
-@media (max-width: 480px) {
-    h1 {
-        font-size: 1.5rem;
-    }
     
-    .btn, .btn-comparar, .btn-enviar {
-        width: 100%;
-        padding: 0.8rem;
+    .formulario-contato {
+        padding: 1rem;
     }
     
     .form-group input,
     .form-group select,
     .form-group textarea {
         padding: 0.6rem;
+    }
+    
+    footer {
+        padding: 1rem;
+    }
+    
+    .social-links a {
+        font-size: 1.2rem;
+        margin: 0 0.3rem;
+    }
+    
+    .copyright p {
+        font-size: 0.8rem;
+    }
+}
+
+/* Ajustes para telas muito pequenas */
+@media (max-width: 480px) {
+    body {
+        font-size: 0.9rem;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    nav ul li {
+        margin: 0.2rem 0;
+    }
+    
+    .produto {
+        gap: 1rem;
+    }
+    
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+    
+    .btn, .btn-comparar, .btn-enviar {
+        padding: 0.6rem 1rem;
+        font-size: 0.9rem;
     }
 }

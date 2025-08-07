@@ -1,0 +1,54 @@
+/* Media Queries para Responsividade */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 1rem;
+    }
+    
+    .logo {
+        margin-bottom: 1rem;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    nav ul li {
+        margin: 0.5rem 0;
+    }
+    
+    .produto {
+        flex-direction: column;
+    }
+    
+    .imagens-veiculo img {
+        width: 100%;
+        min-width: auto;
+    }
+    
+    table {
+        font-size: 0.8rem;
+    }
+    
+    th, td {
+        padding: 0.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+    
+    .btn, .btn-comparar, .btn-enviar {
+        width: 100%;
+        padding: 0.8rem;
+    }
+    
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        padding: 0.6rem;
+    }
+}
